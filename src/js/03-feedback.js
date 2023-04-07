@@ -46,13 +46,13 @@ function notEmptyForm() {
     if (setValueForm.email) {
       inputEmail.value = setValueForm.email;
     } else {
-      inputEmail.value = '';
+      inputEmail.value = ''; // бо інакше там undefined прописується, а це мене бісить
     }
 
     if (setValueForm.message) {
       textareaMessage.value = setValueForm.message;
     } else {
-      textareaMessage.value = '';
+      textareaMessage.value = ''; // бо інакше там undefined прописується, а це мене бісить
     }
   }
 }
