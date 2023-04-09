@@ -43,6 +43,7 @@ function notEmptyForm() {
   const savedValue = localStorage.getItem(STORAGE_KEY);
   if (savedValue) {
     const setValueForm = JSON.parse(savedValue);
+    formData = { email: setValueForm.email, message: setValueForm.message };
 
     if (setValueForm.email) {
       inputEmail.value = setValueForm.email;
