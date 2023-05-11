@@ -34,3 +34,4 @@ const galleryLightBox = new SimpleLightbox('.gallery a', {
 });
 
 console.log(galleryItems);
+console.log(galleryLightBox);
